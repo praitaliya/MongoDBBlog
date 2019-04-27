@@ -7,7 +7,7 @@ var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var mangooes = require('mongoose');
 
-let promise = mangooes.connect('mongodb+srv://s1g1-blog:s1g1-blog@s1g1-blog-qcbvo.mongodb.net/S1G1-Blog?retryWrites=true');
+let promise = mangooes.connect('<MONGO-DB-URL>');
 promise.then(
     () => {
       console.log('Connected');
